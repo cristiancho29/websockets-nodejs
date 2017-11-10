@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Aplicación con Sockets</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <h1>My App</h1>
+  <h2>Mensajes</h2>
+  <div id="messages"></div>
+  <br/>
+  <h2>Enviar Mensaje</h2>
+  <form onsubmit="return addMessage(this)">
+	<input type="text" id="username" placeholder="Tu Nombre" >
+    <input type="text" id="texto" placeholder="Mensaje...">
+    <input type="submit" value="Enviar!">
+</form>
+</body>
+</html>
